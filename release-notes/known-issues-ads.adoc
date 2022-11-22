@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-issues-ads.html 
+keywords: astra, control center, ads, data store, bugs, known issues, problems 
+summary: 'Les problèmes connus identifient les problèmes susceptibles de vous empêcher d"utiliser cette version du produit avec succès.' 
+---
+= Problèmes connus avec la présentation d'Astra Data Store et ce centre de contrôle Astra
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/release-notes/
+
+
+Les problèmes connus identifient les problèmes susceptibles de vous empêcher d'utiliser cette version du produit avec succès.
+
+Les problèmes connus suivants affectent la gestion du magasin de données Astra avec la dernière version du centre de contrôle Astra :
+
+
+
+== L'aperçu du magasin de données Astra ne peut pas être utilisé comme classe de stockage pour Astra Control Center en raison d'un échec de la sonde de liaison du pod MongoDB
+
+Si vous tentez d'utiliser l'aperçu Astra Data Store comme mécanisme de provisionnement de classe de stockage lors d'un déploiement Astra Control Center, la sonde d'exhaustivité du pod MongoDB échoue, ce qui entraîne un déploiement qui ne sera pas terminé.
+
+Pour corriger ce problème, apportez les modifications suivantes en plus des modifications standard YAML lorsque vous complétez le link:../get-started/install_acc.html#configure-astra-control-center["Procédure d'installation d'Astra Control Center"]:
+
+. Modifiez le link:../get-started/install_acc.html#configure-the-astra-control-center-operator["YAML de déploiement de l'opérateur du centre de contrôle Astra (astra_Control_Center_Operator_Deploy.yaml)"] Pour modifier le délai d'installation de Helm :
++
+[listing]
+----
+- name: ACCOP_HELM_INSTALLTIMEOUT
+  value: 20m
+----
+. Modifiez le link:../get-started/install_acc.html#configure-astra-control-center["Fichier de ressource personnalisée (CR) Astra Control Center (astra_Control_Center_min.yaml)"] et inclure les valeurs supplémentaires mises en évidence sous `spec`:
++
+[listing, subs="+quotes"]
+----
+apiVersion: astra.netapp.io/v1
+kind: AstraControlCenter
+metadata:
+  name: astra
+*spec:*
+  accountName: "Example"
+  astraVersion: "ASTRA_VERSION"
+  astraAddress: "astra.example.com"
+  autoSupport:
+    enrolled: true
+  email: "[admin@example.com]"
+  firstName: "SRE"
+  lastName: "Admin"
+  imageRegistry:
+    name: "[your_registry_path]"
+    secret: "astra-registry-cred"
+  storageClass: "ontap-gold"
+  *additionalValues:*
+    *polaris-mongodb:*
+      *mongodb:*
+        *livenessProbe:*
+          *initialDelaySeconds: 400*
+      *metrics:*
+        *livenessProbe:*
+          *initialDelaySeconds: 400*
+----
+
+
+
+
+== Astra Control Center présente le back-end de l'aperçu du stockage dans un état inconnu d'Astra Data Store
+
+Astra Control Center présente le système de stockage back-end d'Astra Data Store `Unknown` État à partir de la page Backends dans l'interface utilisateur. Dans cet état, le stockage back-end est réellement disponible et peut être communiqué avec. Tout composant du système de stockage back-end est probable qu'il soit défectueux et doit être renvoyé à un état sain pour que le système back-end en mode « back-end » `available`.
+
+
+
+== Trouvez plus d'informations
+
+* link:../release-notes/resolved-issues.html["Résolution des problèmes"]
+* link:../release-notes/known-issues.html["Problèmes connus"]
+* link:../release-notes/known-limitations.html["Limites connues"]
+* https://docs.netapp.com/us-en/astra-data-store/index.html["Documentation Astra Data Store"]
+

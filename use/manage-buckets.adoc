@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: use/manage-buckets.html 
+keywords: how to set up object storage in astra, how to set up astra buckets, s3, astra, setting up astra control, how to set up astra control center, kubernetes 
+summary: 'Il est essentiel d"ajouter des fournisseurs de compartiments de stockage objet pour sauvegarder les applications et le stockage persistant si vous souhaitez cloner des applications entre les clusters.' 
+---
+= Gestion des compartiments
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+Un fournisseur de compartiments de stockage est essentiel pour la sauvegarde de vos applications et du stockage persistant, ou pour le clonage d'applications entre les clusters. Avec Astra Control Center, ajoutez un fournisseur de magasin d'objets comme destination de sauvegarde externe pour vos applications.
+
+Il n'est pas nécessaire de cloner la configuration de vos applications et le stockage persistant vers le même cluster.
+
+Utiliser l'un des fournisseurs de compartiments suivants :
+
+* NetApp ONTAP S3
+* NetApp StorageGRID S3
+* S3 générique
+
+
+
+NOTE: Bien qu'Astra Control Center prenne en charge Amazon S3 en tant que fournisseur de compartiments S3 génériques, Astra Control Center peut ne pas prendre en charge tous les fournisseurs de magasins d'objets qui affirment la prise en charge d'Amazon S3.
+
+Vous ne pouvez pas supprimer un compartiment, mais vous pouvez le modifier.
+
+Un godet peut être dans l'un des États suivants :
+
+* En attente : le compartiment est planifié pour la découverte.
+* Disponible : le godet est disponible.
+* Retiré : le godet n'est pas accessible actuellement.
+
+
+Pour plus d'informations sur la gestion des compartiments à l'aide de l'API de contrôle Astra, reportez-vous au link:https://docs.netapp.com/us-en/astra-automation/["Informations sur l'automatisation et les API d'Astra"^].
+
+Vous pouvez effectuer les tâches suivantes liées à la gestion des compartiments :
+
+* link:../get-started/setup_overview.html#add-a-bucket["Ajouter un godet"]
+*  a bucket
+
+
+
+NOTE: Les compartiments S3 du centre de contrôle Astra n'indiquent pas la capacité disponible. Avant de sauvegarder ou de cloner des applications gérées par Astra Control Center, vérifiez les informations de compartiment dans le système de gestion ONTAP ou StorageGRID.
+
+
+
+== Supprimer les informations d'identification
+
+Supprimez les identifiants S3 d'un compte à tout moment à l'aide de l'API Astra Control.
+
+Pour plus de détails, voir https://docs.netapp.com/us-en/astra-automation/index.html["Utilisez l'API de contrôle Astra"^].
+
+
+TIP: Le premier ensemble d'informations d'identification que vous ajoutez à Astra Control est toujours utilisé car Astra Control utilise les informations d'identification pour authentifier le compartiment de secours. Il est préférable de ne pas supprimer ces informations d'identification.
+
+
+
+== Modifier un godet
+
+Vous pouvez modifier les informations d'identification d'accès pour un compartiment et modifier si un compartiment sélectionné est le compartiment par défaut.
+
+
+NOTE: Lorsque vous ajoutez un compartiment, sélectionnez le fournisseur approprié et fournissez les identifiants appropriés pour ce fournisseur. Par exemple, l'interface utilisateur accepte NetApp ONTAP S3 comme type et accepte les identifiants StorageGRID. Toutefois, toutes les futures sauvegardes et restaurations des applications à l'aide de ce compartiment échoueront. Voir la link:../release-notes/known-issues.html#selecting-a-bucket-provider-type-with-credentials-for-another-type-causes-data-protection-failures["Notes de version"].
+
+.Étapes
+. Dans la navigation à gauche, sélectionnez *seaux*.
+. Dans le menu actions, sélectionnez *Modifier*.
+. Modifier toute information autre que le type de godet.
++
+
+TIP: Vous ne pouvez pas modifier le type de compartiment.
+
+. Sélectionnez *mettre à jour*.
+
+
+
+
+== Trouvez plus d'informations
+
+* https://docs.netapp.com/us-en/astra-automation/index.html["Utilisez l'API de contrôle Astra"^]
+

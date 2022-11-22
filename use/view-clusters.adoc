@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: use/view-clusters.html 
+keywords: view cluster, cluster storage, cluster overview 
+summary: Après avoir ajouté des clusters à Astra Control Center, vous pouvez afficher des informations détaillées sur le cluster, notamment son emplacement, les nœuds de travail, les volumes persistants et les classes de stockage. 
+---
+= Afficher l'état de santé et les détails des clusters
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+Une fois que vous avez ajouté des clusters à gérer par Astra Control Center, vous pouvez afficher des informations détaillées sur le cluster, notamment son emplacement, les nœuds de travail, les volumes persistants et les classes de stockage.
+
+.Étapes
+. Dans l'interface utilisateur du Centre de contrôle Astra, sélectionnez *clusters*.
+. Sur la page *clusters*, sélectionnez le cluster dont vous souhaitez afficher les détails.
+. Consultez les informations sur les onglets *Présentation*, *stockage* et *activité* pour trouver les informations que vous recherchez.
++
+** *Présentation* : détails sur les nœuds de travail, y compris leur état.
+** *Stockage* : volumes persistants associés au calcul, y compris la classe et l'état du stockage.
+** *Activité* : affiche les activités liées au cluster.
+
+
+
+
+
+NOTE: Vous pouvez également afficher les informations du groupe d'instruments à partir du Centre de contrôle Astra *Tableau de bord*. Dans l'onglet *clusters* sous *Résumé des ressources*, vous pouvez sélectionner les clusters gérés, qui vous permettent d'accéder à la page *clusters*. Après avoir accédé à la page *clusters*, suivez les étapes décrites ci-dessus.

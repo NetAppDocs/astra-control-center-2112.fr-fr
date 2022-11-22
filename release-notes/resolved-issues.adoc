@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: release-notes/resolved-issues.html 
+keywords: astra, control center, fixed bugs, fixes, resolved issues 
+summary: 'Les problèmes connus identifient les problèmes susceptibles de vous empêcher d"utiliser cette version du produit avec succès.' 
+---
+= Résolution des problèmes
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/release-notes/
+
+
+Ces problèmes ont été corrigés dans cette version du produit.
+
+
+
+== Les sauvegardes supplémentaires sont conservées dans le cadre d'une sauvegarde planifiée
+
+Parfois, une ou plusieurs sauvegardes dans Astra Control Center sont conservées au-delà du numéro spécifié pour être conservées dans le programme de sauvegarde. Ces sauvegardes supplémentaires doivent être supprimées dans le cadre d'une sauvegarde planifiée, mais elles ne sont pas supprimées et bloquées dans un `pending` état.
+
+
+
+== La sauvegarde ou le clonage échoue pour les applications utilisant des ESV avec des unités décimales dans Astra Control Center
+
+Les volumes créés avec des unités décimales échouent à l'aide du processus de sauvegarde ou de clonage Astra Control Center.
+
+
+
+== L'interface utilisateur d'Astra Control Center est lente à afficher les modifications apportées aux ressources d'application, telles que les changements de volume persistant
+
+Après une opération de protection des données (clonage, sauvegarde, restauration) et après le redimensionnement du volume persistant, il y a vingt minutes de retard avant que la nouvelle taille du volume ne s'affiche dans l'interface utilisateur. Ce délai dans l'interface utilisateur peut également survenir lors de l'ajout ou de la modification de ressources d'application. Dans ce cas, une opération de protection des données fonctionne avec succès en quelques minutes et vous pouvez utiliser le logiciel de gestion pour le système back-end pour confirmer la modification de la taille du volume.
+
+
+
+== Liaison de rôle de cluster incorrecte créée par la définition de ressource personnalisée Astra Control Center lors de l'installation
+
+Le correctif permettant de corriger la liaison du rôle de cluster lors de l'installation n'est plus nécessaire dans cette version.
+
+
+
+== Collecte ASUP bloquée en état de génération ou de chargement
+
+Si un pod ASUP est arrêté ou redémarré, il est possible que la collecte ASUP soit bloquée en état de génération ou de téléchargement.
+
+
+
+== Espaces de noms et applications déployés par l'opérateur
+
+Un opérateur et l'application qu'il déploie doivent utiliser le même espace de noms. Astra Control ne prend en charge qu'une seule application déployée par l'opérateur par espace de noms.
+
+
+
+== Trouvez plus d'informations
+
+* link:../release-notes/known-issues.html["Problèmes connus"]
+* link:../release-notes/known-limitations.html["Limites connues"]
+* link:../release-notes/known-issues-ads.html["Problèmes connus avec la présentation d'Astra Data Store et ce centre de contrôle Astra"]
+
