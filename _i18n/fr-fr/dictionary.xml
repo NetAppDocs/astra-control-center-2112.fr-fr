@@ -331,7 +331,6 @@
   <block id="5dbf9f76b95952a36b5c81bedd95e1c8" category="cell">Communication avec NetApp ActiveIQ</block>
   <block id="f370975993dbb1e7c1e24af01ed7986c" category="section-title">Navigateurs Web pris en charge</block>
   <block id="5ee52824555f7e54b800612663b9f098" category="paragraph">Astra Control Center prend en charge les versions récentes de Firefox, Safari et Chrome avec une résolution minimale de 1280 x 720.</block>
-  <block id="0a20c90d5270bed19fcaf851778c663b" category="section-title">Et la suite</block>
   <block id="159b2efa467f3d1f53e7c16668353bf5" category="inline-link-macro">démarrage rapide</block>
   <block id="77a7c94739d3e3b6a3c106162739bbcd" category="paragraph">Afficher le <block ref="4a78f9b7a1530228ea4c970be46c5b94" category="inline-link-macro-rx"></block> présentation.</block>
   <block id="efb8331a92b47dc173e5cbcd8ae1a87b" category="summary">Après avoir installé Astra Control Center, connectez-vous à l'interface utilisateur et modifiez votre mot de passe, vous devez configurer une licence, ajouter des clusters, gérer le stockage et ajouter des compartiments.</block>
@@ -437,7 +436,6 @@
   <block id="0543a7666bf24a7b098b17a6168941d2" category="list-text">Dans la boîte de dialogue compartiments, sélectionnez l'onglet *Ajouter* ou *utiliser existant*.</block>
   <block id="44c089fc47e708b71926c830cc30454e" category="list-text">Saisissez un nom pour l'identifiant qui le distingue des autres identifiants dans Astra Control.</block>
   <block id="43546cbd84ee48528f9cf248dcfb2c39" category="list-text">Saisissez l'ID d'accès et la clé secrète en collant le contenu dans le presse-papiers.</block>
-  <block id="3f297ef15cde0668e93b35f2752fd4fd" category="section-title">Et la suite ?</block>
   <block id="f5c61eabb41590a473fa2d0d115e63c1" category="paragraph">Maintenant que vous vous êtes connecté et que vous avez ajouté des clusters à Astra Control Center, vous pouvez commencer à utiliser les fonctions de gestion des données applicatives d'Astra Control Center.</block>
   <block id="1b4fcfaacbd0ae3e24bc82f8d7a82211" category="inline-link-macro">Gérer les utilisateurs</block>
   <block id="a2ef00bfa82a9800d86855a4a32ccef6" category="list-text"><block ref="a2ef00bfa82a9800d86855a4a32ccef6" category="inline-link-macro-rx"></block></block>
@@ -660,13 +658,11 @@
   <block id="15dd8f83e9a999edc6eae56c5aec726e" category="paragraph">Cette page offre un aperçu détaillé des étapes à suivre pour commencer à utiliser le centre de contrôle Astra. Les liens de chaque étape vous mènent à une page qui fournit plus de détails.</block>
   <block id="b777e6ba4555d404b00c2436d03ae649" category="inline-link-macro">informations de licence</block>
   <block id="dc9e569caa79effd430c7ea63ceff7be" category="paragraph">Essayez-le ! Si vous voulez essayer Astra Control Center, vous pouvez utiliser une licence d'évaluation de 90 jours. Voir <block ref="3d35b4f40b39e7d8200f90f9d624f8f4" category="inline-link-macro-rx"></block> pour plus d'informations.</block>
-  <block id="4854d4c0301c6f34c76f1cb78057e09e" category="list-title">&lt;span class=« image »&gt;&lt;img src=<block ref="0c3becc25d95e48b9ca863002a042824" category="inline-link-rx"></block> alt=« one »&gt;&lt;/span&gt; consultez les exigences du cluster Kubernetes</block>
   <block id="c287552db25a1fab7b049bb27d492f51" category="list-text">Astra fonctionne avec les clusters Kubernetes avec un système de stockage back-end ONTAP configuré avec Trident ou un système back-end de stockage d'aperçu du magasin de données Astra.</block>
   <block id="0deb5023224ed4d71135e9bae6dff9d4" category="list-text">Les clusters doivent fonctionner correctement, avec au moins trois nœuds de travail en ligne.</block>
   <block id="5f08198ddd920cae8e4af705793b2a56" category="list-text">Le cluster doit exécuter Kubernetes.</block>
   <block id="e34728b4f7a3f87b9d4e4bc0568096e1" category="inline-link-macro">En savoir plus sur les exigences du centre de contrôle Astra</block>
   <block id="dc36d12219c1097713b63def4e923028" category="paragraph"><block ref="cb100f378703845999b4907e7c8315fb" category="inline-link-macro-rx"></block>.</block>
-  <block id="9384595b10ef347b2da67882c7b37bd7" category="list-title">&lt;span class=« image »&gt;&lt;img src=<block ref="c9bdd0fd7d7224adcf67691b15f15281" category="inline-link-rx"></block> alt=« deux »&gt;&lt;/span&gt; Télécharger et installer Astra Control Center</block>
   <block id="afdff0e68ce5b4b3109d398df16872f7" category="inline-link">Page de téléchargements de l'Astra Control Center du site de support NetApp</block>
   <block id="b6511e86f155fe09cdd3bb8e739ea6b5" category="list-text">Téléchargez Astra Control Center à partir du<block ref="287561c5277beeaf3b39a65b237114c8" category="inline-link-rx"></block>.</block>
   <block id="276a11727deff1a1f5ebf349b23835fc" category="list-text">Installez Astra Control Center dans votre environnement local.</block>
@@ -676,7 +672,6 @@
   <block id="caa2daddac20e8701619c1fd7c38fe0b" category="paragraph">Vous installez les images sur un registre OpenShift ou utilisez votre registre local.</block>
   <block id="4cb444388821c2b32d8c80c962e7f1c0" category="inline-link-macro">En savoir plus sur l'installation d'Astra Control Center</block>
   <block id="868d347e9c5a5e26320992d6e87924f1" category="paragraph"><block ref="85d4e7b942cbd0c7d715ed76a5e5652f" category="inline-link-macro-rx"></block>.</block>
-  <block id="80de081c75779cda8e2db1de0f292684" category="list-title">&lt;span class=« image »&gt;&lt;img src=<block ref="ddd753dc2858fe3a5582f20b300a0541" category="inline-link-rx"></block> alt=« trois »&gt;&lt;/span&gt; terminez certaines tâches de configuration initiales</block>
   <block id="f13e95a655fb97423bd52082209d8781" category="list-text">Ajouter une licence.</block>
   <block id="89a40ca78d4ff20ec6d54ba006768895" category="list-text">Ajoutez un cluster Kubernetes et Astra Control Center découverte des détails.</block>
   <block id="6d1c9119490d3892054a1cfdca439215" category="list-text">Ajout d'un système back-end de stockage d'aperçu pour ONTAP ou Astra Data Store</block>
@@ -698,7 +693,6 @@
   <block id="a9a11c7d000cd067981f61a0db579f74" category="summary">Vous devez effectuer les contrôles d'élibilité pour vous assurer que votre groupe d'instruments est prêt à être ajouté à Astra Control Center.</block>
   <block id="0ab8b406c4d5e3b8a7e5b402912b73fc" category="doc">Conditions préalables à l'ajout d'un cluster</block>
   <block id="84fccda9e18ab736ae1e33ef33ff8543" category="paragraph">Assurez-vous que les conditions préalables sont remplies avant d'ajouter un cluster. Vous devez également effectuer les vérifications d'admissibilité pour vous assurer que votre grappe est prête à être ajoutée au Centre de contrôle Astra.</block>
-  <block id="32ce911ba9da44dfbcba79bbe607d8f0" category="section-title">Ce dont vous aurez besoin avant d'ajouter un cluster</block>
   <block id="46071ecf3cc6ea1619ad76021e951cc6" category="list-text">Un des types de clusters suivants :</block>
   <block id="a4a555ce407a7c7e6c4672e426b35f6d" category="list-text">Clusters qui exécutent OpenShift 4.6, 4.7 ou 4.8 avec des classes de stockage Astra Trident basées sur le data Store d'Astra, ou sur ONTAP 9.5 ou version ultérieure</block>
   <block id="651cf0b7f84c677320f45d5d6816398a" category="list-text">Clusters exécutant Rancher 2.5</block>
@@ -784,7 +778,6 @@
   <block id="865703399dbe83111d40cdbc0cf36d50" category="section-title">La sélection d'un type de compartiment avec des identifiants d'un autre type entraîne des défaillances de protection des données</block>
   <block id="4f36fb3713e66643baef6c35bc9f41b6" category="paragraph">Lorsque vous ajoutez un compartiment, sélectionnez le fournisseur approprié et entrez les identifiants appropriés pour ce fournisseur. Par exemple, l'interface utilisateur accepte NetApp ONTAP S3 comme type et accepte les identifiants StorageGRID. Toutefois, toutes les futures sauvegardes et restaurations des applications à l'aide de ce compartiment échoueront.</block>
   <block id="c62766292d642e4d3c2f78cc22c7d571" category="section-title">Il est possible que les sauvegardes et les snapshots ne soient pas conservés lors du retrait d'une instance Astra Control Center</block>
-  <block id="5b3294628def37531167489c5f2faf95" category="section-title">L'opération de clonage ne peut pas utiliser d'autres compartiments en plus de la valeur par défaut</block>
   <block id="9f097dac85ac3ea6adc46bf130f734ac" category="inline-link-macro">modifiez les paramètres par défaut du compartiment</block>
   <block id="402051f4be0cc3aad33bcf3ac3d6532b" category="inline-link-macro">sauvegarde</block>
   <block id="bb2ac0b8da1f64a3498af147ba43fc10" category="inline-link-macro">restaurer</block>
@@ -796,7 +789,6 @@
   <block id="885a0d954fa2993f5dd836d15e760d49" category="section-title">L'exécution personnalisée d'applications permet de suspendre le délai des scripts et de ne pas exécuter les scripts post-instantanés</block>
   <block id="1f8c5caea7c9ae9483dd91dca0cbea0e" category="paragraph">Si l'exécution d'un crochet d'exécution prend plus de 25 minutes, le crochet échoue, créant une entrée de journal d'événements avec un code retour « N/A ». Tout instantané affecté sera dépassé et marqué comme ayant échoué, une entrée du journal d'événements signalant le délai d'attente est alors indiquée.</block>
   <block id="17d3f28d49d56e0703e3a6f4d50f0a36" category="paragraph">Puisque les crochets d'exécution réduisent ou désactivent complètement la fonctionnalité de l'application contre laquelle ils s'exécutent, vous devez toujours essayer de réduire le temps d'exécution de vos crochets personnalisés.</block>
-  <block id="d9ad9044513bb2a4324591a9e0425c85" category="section-title">Impossible de déterminer l'état du bundle tar ASUP dans l'environnement mis à l'échelle</block>
   <block id="666f9f1fc732418db675716e4d964efc" category="paragraph">Lors de la collecte ASUP, l'état du bundle dans l'interface utilisateur est signalé comme étant l'un ou l'autre<block ref="daea1b35e5f1ba09fcd43cbba71e2d11" prefix=" " category="inline-code"></block> ou<block ref="6b2ded51d81a4403d8a4bd25fa1e57ee" prefix=" " category="inline-code"></block>. La collecte peut prendre jusqu'à une heure pour les grands environnements. Pendant le téléchargement ASUP, la vitesse de transfert des fichiers réseau du bundle peut s'avérer insuffisante et le téléchargement peut durer 15 minutes sans indication dans l'interface utilisateur. Les problèmes de téléchargement dépendent de la taille des données ASUP, de la taille du cluster mise à l'échelle, et si le délai de collecte dépasse la limite de sept jours.</block>
   <block id="277d303328081a08d224ba1791474f8c" category="section-title">Les snapshots finissent par échouer lorsque les snapshots externes sont utilisés version 4.2.0</block>
   <block id="989f15ab4fafcbe33b5c793f7c17921f" category="inline-link">version prise en charge</block>
@@ -847,7 +839,6 @@
   <block id="a445040139f09298f7fa8e3a22ea47fa" category="section-title">Les clones des applications installées à l'aide d'opérateurs pass by Reference peuvent échouer</block>
   <block id="cee3f7f1743165823d88b27d5998cf00" category="paragraph">Astra Control prend en charge les applications installées avec des opérateurs à espace de noms. Ces opérateurs sont généralement conçus avec une architecture « pass-by-value » plutôt qu'une architecture « pass-by-Reference ». Voici quelques applications opérateur qui suivent ces modèles :</block>
   <block id="17cc01540b66b5969e8b039af78f39bd" category="paragraph">Notez qu'Astra Control peut ne pas être en mesure de cloner un opérateur conçu avec une architecture de "pass-by-Reference" (par exemple, l'opérateur CockroachDB). Lors de ces types d'opérations de clonage, l'opérateur cloné tente de référencer les secrets de Kubernetes de l'opérateur source malgré avoir son propre nouveau secret dans le cadre du processus de clonage. Il est possible que le clonage échoue, car Astra Control ne connaît pas les secrets de Kubernetes qui sont présents dans l'opérateur source.</block>
-  <block id="015b7ce9577ab8215272b79fab0e4df6" category="section-title">L'état du cluster est supprimé bien que le cluster et le réseau fonctionnent sinon comme prévu</block>
   <block id="94058465ef9a6d58d42576a344fed5af" category="paragraph">Si un cluster se trouve dans le<block ref="b07286ebbb5bc7aa91cc3eaa8bc19711" prefix=" " category="inline-code"></block> État et pourtant, la connectivité cluster et réseau semble saine (les tentatives externes d'accès au cluster via les API Kubernetes sont réussies). Le kubeconfig que vous avez fourni au contrôle Astra pourrait ne plus être valide. Cela peut être dû à une rotation ou à une expiration du certificat sur le cluster. Pour corriger ce problème, mettez à jour les informations d'identification associées au cluster dans Astra Control à l'aide du <block ref="a2191a9273bc54ae2e00dd51b40d424f" category="inline-link-macro-rx"></block>:</block>
   <block id="66edf4995b8868e964c7fcd7d02a19e0" category="list-text">Exécutez un appel POST pour ajouter un fichier kubeconfig mis à jour au<block ref="fe33cadf2b68b4492c3d77794a829e29" prefix=" " category="inline-code"></block> et récupérer le noeud final affecté<block ref="b80bb7740288fda1f201890375a60c8f" prefix=" " category="inline-code"></block> du corps de réponse.</block>
   <block id="d0becff2191f0fa6114340d29cd03f72" category="list-text">Effectuer un APPEL PUT à partir du<block ref="a8581617f4d06018ed83bcbb6d633f90" prefix=" " category="inline-code"></block> À l'aide de l'ID de cluster approprié et définissez le<block ref="5f2852e58e87847c0c9324d5a8954ae2" prefix=" " category="inline-code"></block> à la<block ref="b80bb7740288fda1f201890375a60c8f" prefix=" " category="inline-code"></block> valeur de l'étape précédente.</block>
@@ -871,7 +862,6 @@
   <block id="6dd84389e57d1bd5301a28cd06213505" category="paragraph">Si une application gérée contient des pods dans un état non sain, Astra Control ne peut pas créer de nouvelles sauvegardes et de nouveaux clones.</block>
   <block id="52613a0e2a34040faff2fa3713d61414" category="section-title">Les connexions existantes à un pod Postgres provoquent des défaillances</block>
   <block id="a3e438b957ae4a8b4731d63d2e88365f" category="paragraph">Lorsque vous exécutez des opérations sur les modules Postgres, vous ne devez pas vous connecter directement dans le pod pour utiliser la commande psql. Astra Control nécessite un accès psql pour geler et dégeler les bases de données. S'il existe une connexion existante, le snapshot, la sauvegarde ou le clone échoueront.</block>
-  <block id="39feb634693572723a378befc20023aa" category="section-title">Trident n'est pas désinstallé d'un cluster</block>
   <block id="185d9e7bb43f5673a0095e89e4b5cfc9" category="inline-link">Suivez ces étapes dans la documentation Trident</block>
   <block id="e516d0c3ddb020e2ecc9f93439922ef0" category="paragraph">Lorsque vous dégérez un cluster depuis Astra Control Center, Trident n'est pas automatiquement désinstallé du cluster. Pour désinstaller Trident, vous devez procéder comme ça<block ref="11951e75a5c670d49400c1d12d4333d6" category="inline-link-rx"></block>.</block>
   <block id="88c91ef58cacca0ce7311796478d0cf3" category="inline-link-macro">Problèmes connus avec la présentation d'Astra Data Store et ce centre de contrôle Astra</block>
@@ -885,7 +875,6 @@
   <block id="85d3f736ce18017c45e8a6ae4d1e8fe5" category="list-text">Modifiez le <block ref="aa49db316689710519b7c8def18b8801" category="inline-link-macro-rx"></block> Pour modifier le délai d'installation de Helm :</block>
   <block id="7a80cbdb518e1d355b96f0f85cfc440d" category="inline-link-macro">Fichier de ressource personnalisée (CR) Astra Control Center (astra_Control_Center_min.yaml)</block>
   <block id="f0e4789c9bc3e68aa311924dc6728d18" category="list-text">Modifiez le <block ref="4c6c00b260f38942b09c4617203862e3" category="inline-link-macro-rx"></block> et inclure les valeurs supplémentaires mises en évidence sous<block ref="b979c2934ac0b4ba3f08dabfdd1b2299" prefix=" " category="inline-code"></block>:</block>
-  <block id="d9eccd26e5cbb8da91b3a27fd92bd333" category="section-title">Astra Control Center présente le back-end de l'aperçu du stockage dans un état inconnu d'Astra Data Store</block>
   <block id="549ef937be092b5163803516d9dba2ce" category="paragraph">Astra Control Center présente le système de stockage back-end d'Astra Data Store<block ref="88183b946cc5f0e8c96b2e66e1c74a7e" prefix=" " category="inline-code"></block> État à partir de la page Backends dans l'interface utilisateur. Dans cet état, le stockage back-end est réellement disponible et peut être communiqué avec. Tout composant du système de stockage back-end est probable qu'il soit défectueux et doit être renvoyé à un état sain pour que le système back-end en mode « back-end »<block ref="e4894ca167b08880bfc35862f18575eb" prefix=" " category="inline-code"></block>.</block>
   <block id="640748e2e0f82731017195bf16030061" category="paragraph">Ces problèmes ont été corrigés dans cette version du produit.</block>
   <block id="4fc8b8758715863e1a09b124319f8e9b" category="section-title">Les sauvegardes supplémentaires sont conservées dans le cadre d'une sauvegarde planifiée</block>
@@ -1191,14 +1180,12 @@
   <block id="a11ca2c2dd5144bf630dd5eb29b7cc67" category="list-text">Saisissez un mot de passe conforme aux exigences de mot de passe.</block>
   <block id="57d4c802b66507e7e8b66d11f3a59a6f" category="list-text">Saisissez à nouveau le mot de passe pour le confirmer.</block>
   <block id="45e3b3a50e0542121cdf2766502b7b56" category="list-text">Sélectionnez *changer mot de passe*.</block>
-  <block id="90f1c6fc655d106b5040673f4fce5f99" category="section-title">Réinitialiser le mot de passe d'un autre utilisateur</block>
   <block id="777944860c5bbcdb1b4a4a0a593efb52" category="paragraph">Si votre compte dispose des autorisations de rôle Administrateur ou propriétaire, vous pouvez réinitialiser les mots de passe des autres comptes utilisateur ainsi que les vôtres. Lorsque vous réinitialisez un mot de passe, vous attribuez un mot de passe temporaire que l'utilisateur devra modifier lors de la connexion.</block>
   <block id="109438fb5a37882f518dc1879a8744ef" category="list-text">Dans l'onglet *utilisateurs*, sélectionnez la liste déroulante dans la colonne *état* de l'utilisateur.</block>
   <block id="df429da64d721747277606b598df29c4" category="list-text">Sélectionnez *Réinitialiser le mot de passe*.</block>
   <block id="67873c21262ba112b2e21148d43428f5" category="list-text">Saisissez un mot de passe temporaire conforme aux exigences de mot de passe.</block>
   <block id="7d52685360edaccc999997fc87429251" category="admonition">Lors de la prochaine connexion de l'utilisateur, l'utilisateur est invité à modifier le mot de passe.</block>
   <block id="3930015dcc2810869591e35a2b5d714b" category="list-text">Sélectionnez *Réinitialiser le mot de passe*.</block>
-  <block id="a3f6d57c07e3d951867e570c6f3e5028" category="section-title">Modifier le rôle d'un utilisateur</block>
   <block id="24c0d48852d7cd070e2d6f992f4c74ab" category="paragraph">Les utilisateurs ayant le rôle propriétaire peuvent modifier le rôle de tous les utilisateurs, tandis que les utilisateurs disposant du rôle Administrateur peuvent modifier le rôle des utilisateurs qui ont le rôle Administrateur, membre ou Visionneuse.</block>
   <block id="bda2a6db69313c6436901a69dc87e01b" category="list-text">Dans l'onglet *utilisateurs*, sélectionnez la liste déroulante dans la colonne *rôle* de l'utilisateur.</block>
   <block id="05a9626e14c53ce2e11d8519815be8dd" category="list-text">Sélectionnez un nouveau rôle, puis sélectionnez *changer le rôle* lorsque vous y êtes invité.</block>
@@ -1721,15 +1708,11 @@
   <block id="9c4b5c958d6364ac3b17f0aa5a50e29d" category="paragraph">Vous pouvez créer des sauvegardes, des clones, des copies Snapshot et des règles de protection pour vos applications à l'aide d'Astra Control Center. La sauvegarde de vos applications aide vos services et vos données associées à être aussi disponibles que possible. En cas d'incident, la restauration à partir d'une sauvegarde permet une restauration complète d'une application et de ses données, avec une interruption minimale. Les sauvegardes, les clones et les snapshots contribuent à vous protéger contre les menaces classiques, comme les ransomwares, la perte accidentelle de données et les incidents environnementaux. <block ref="6b6e09024640eb9ec4bbda9f054e4ca3" category="inline-link-macro-rx"></block>.</block>
   <block id="fe2011653552de71bf2a04defdef5e3d" category="section-title">Workflow de protection des applications</block>
   <block id="9e3e52a15539d6b76c9af7b7c901f2dc" category="paragraph">Vous pouvez utiliser l'exemple de flux de travail suivant pour commencer à protéger vos applications.</block>
-  <block id="a04c6aa912ab1752fccd834c4a0468b9" category="section-title">Sauvegardez toutes les applications</block>
   <block id="cdb972c8ec0f0d2d064eee29da832b09" category="inline-link-macro">créez une sauvegarde manuelle de toutes les applications</block>
   <block id="bb9745866a03e99751c67559a4b5bbfc" category="paragraph">Pour être sûr que vos applications sont immédiatement protégées, <block ref="153c1de46633dd7b9ee4197b0f57d4e6" category="inline-link-macro-rx"></block>.</block>
-  <block id="fc728311492264f387b6d56bf7f401d9" category="section-title">Configurez une stratégie de protection pour chaque application</block>
   <block id="67d8aac0ef877e89b323dda77c01cdc7" category="inline-link-macro">configurez une stratégie de protection pour chaque application</block>
   <block id="a6f3f1cac5047bfc8c8a549d7555afb4" category="paragraph">Pour automatiser les sauvegardes et snapshots futurs, <block ref="be33481d5db8c6459d2a9f9986e47ba8" category="inline-link-macro-rx"></block>. Par exemple, vous pouvez commencer avec des sauvegardes hebdomadaires et des snapshots quotidiens, et en conserver un mois pour les deux. Il est fortement recommandé d'automatiser les sauvegardes et les snapshots avec une règle de protection par rapport aux sauvegardes et snapshots manuels.</block>
-  <block id="68db57ac71c439bd714299714a3d5cd5" category="section-title">Facultatif : ajustez les règles de protection</block>
   <block id="2afcb2016ee556b04a072d6535bbab55" category="paragraph">À mesure que les applications et leurs modèles d'utilisation évoluent, ajustez les règles de protection selon les besoins pour bénéficier d'une protection optimale.</block>
-  <block id="ae923994b95458260e1a5b8c8c593bf1" category="section-title">En cas d'incident, restaurez vos applications</block>
   <block id="7ce9ebbb5de6892ca270cea878bd99d1" category="inline-link-macro">restauration de la dernière sauvegarde</block>
   <block id="dd27127bd92a34c602fa40bc2a1cdd3e" category="paragraph">En cas de perte de données, vous pouvez effectuer une restauration par <block ref="550aec8aa1d184571b143fbb368e4c54" category="inline-link-macro-rx"></block> d'abord pour chaque application. Vous pouvez alors restaurer le dernier snapshot (si disponible).</block>
   <block id="c8bc2d4843a862e6c92deaec60873d67" category="summary">Décrit comment retirer le centre de contrôle Astra et le conducteur du centre de contrôle Astra.</block>
@@ -1815,4 +1798,29 @@
   <block id="1eda8b1f4dfa35b119f2a579170d4546" category="sidebar">Gérer les identifiants</block>
   <block id="f28aaf8670a5d0a4f80f0bf5fccb4b1c" category="sidebar">Introduction à Astra</block>
   <block id="e462fefdff91aa001d8ce5bcc11f5f5f" category="sidebar">Déploiement des applications</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="section-title">Et la suite</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">Ce dont vous avez besoin</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">Description de la tâche</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Une seule</block>
+  <block id="13a0d74de4f994f2861da351c22e5549" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Vérifiez la configuration des clusters Kubernetes</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Deux</block>
+  <block id="6e6d8bfff1b16149f8c62cfee0d2f62e" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Téléchargez et installez Astra Control Center</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Trois</block>
+  <block id="ba9e9d1eb144bbf0eb66ffe3fb01e03a" category="list-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Effectuez certaines tâches de configuration initiales</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Quatre</block>
+  <block id="9824425bd5418e5e140ee6b8561b8914" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Utilisez Astra Control Center</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">Cinq</block>
+  <block id="4e661ed0899ae91f577701320636fabf" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> Continuez à partir de ce démarrage rapide</block>
+  <block id="190b1d4301402be73ef9a56adefaf47b" category="section-title">Ce dont vous avez besoin avant d'ajouter un cluster</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="section-title">Et la suite ?</block>
+  <block id="b0bec2358236d5d91345b1e9e0a81746" category="section-title">Le cluster est dans le<block ref="b07286ebbb5bc7aa91cc3eaa8bc19711" prefix=" " category="inline-code"></block> état bien que le cluster et le réseau fonctionnent autrement comme prévu</block>
+  <block id="65d25f81ce4ac60dc17acfe9f1c44ce1" category="section-title">Trident n'est pas désinstallé d'un cluster</block>
+  <block id="00b1ac32b7dbd08f34f95fc3177c5dee" category="section-title">Astra Control Center présente le stockage d'aperçu d'Astra Data Store dans le back-end<block ref="88183b946cc5f0e8c96b2e66e1c74a7e" prefix=" " category="inline-code"></block> état</block>
+  <block id="6d2d6dcdeb7eba42ceceeb112f05b859" category="section-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Sauvegardez toutes les applications</block>
+  <block id="596a8ca466f62d03c2dfc376a65cac71" category="section-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Configurez une stratégie de protection pour chaque application</block>
+  <block id="286778446d447b5a9df4054a3b3dd6f3" category="section-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Facultatif : ajustez les règles de protection</block>
+  <block id="50b2dc093d74b71cb482308eb930fb02" category="section-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> En cas d'incident, restaurez vos applications</block>
+  <block id="53c5fac0ba78b08ca3f0a270b746c5d2" category="section-title">Réinitialiser le mot de passe d'un autre utilisateur</block>
+  <block id="edb74efc05972c268b6cccf83996ac3e" category="section-title">Modifier le rôle d'un utilisateur</block>
 </blocks>

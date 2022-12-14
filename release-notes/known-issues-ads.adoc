@@ -64,7 +64,7 @@ metadata:
 
 
 
-== Astra Control Center présente le back-end de l'aperçu du stockage dans un état inconnu d'Astra Data Store
+== Astra Control Center présente le stockage d'aperçu d'Astra Data Store dans le back-end `Unknown` état
 
 Astra Control Center présente le système de stockage back-end d'Astra Data Store `Unknown` État à partir de la page Backends dans l'interface utilisateur. Dans cet état, le stockage back-end est réellement disponible et peut être communiqué avec. Tout composant du système de stockage back-end est probable qu'il soit défectueux et doit être renvoyé à un état sain pour que le système back-end en mode « back-end » `available`.
 

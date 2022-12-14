@@ -76,7 +76,7 @@ Notez qu'Astra Control peut ne pas être en mesure de cloner un opérateur conç
 
 
 
-== L'état du cluster est supprimé bien que le cluster et le réseau fonctionnent sinon comme prévu
+== Le cluster est dans le `removed` état bien que le cluster et le réseau fonctionnent autrement comme prévu
 
 Si un cluster se trouve dans le `removed` État et pourtant, la connectivité cluster et réseau semble saine (les tentatives externes d'accès au cluster via les API Kubernetes sont réussies). Le kubeconfig que vous avez fourni au contrôle Astra pourrait ne plus être valide. Cela peut être dû à une rotation ou à une expiration du certificat sur le cluster. Pour corriger ce problème, mettez à jour les informations d'identification associées au cluster dans Astra Control à l'aide du link:https://docs.netapp.com/us-en/astra-automation/index.html["API de contrôle Astra"]:
 

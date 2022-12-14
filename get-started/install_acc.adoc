@@ -15,7 +15,7 @@ Pour installer le centre de contrôle Astra, téléchargez le bundle d'installat
 
 Pour les environnements Red Hat OpenShift, vous pouvez également utiliser un link:../get-started/acc_operatorhub_install.html["autre procédure"] Pour installer Astra Control Center à l'aide d'OpenShift OperatorHub.
 
-.Ce dont vous avez besoin, 8217;ll
+.Ce dont vous avez besoin
 * link:requirements.html["Avant de commencer l'installation, préparez votre environnement pour le déploiement d'Astra Control Center"].
 * S'assurer que tous les opérateurs du groupe d'instruments sont en état de fonctionnement et disponibles.
 +
@@ -38,6 +38,7 @@ oc get apiservices
 * Vous avez créé une adresse FQDN pour Astra Control Center dans votre data Center.
 
 
+.Description de la tâche
 La procédure d'installation d'Astra Control Center est la suivante :
 
 * Installe les composants Astra dans le `netapp-acc` (ou espace de nom personnalisé).
@@ -53,17 +54,18 @@ NOTE: Les commandes Podman peuvent être utilisées à la place des commandes Do
 
 IMPORTANT: N'exécutez pas la commande suivante pendant l'intégralité du processus d'installation pour éviter de supprimer toutes les pods Astra Control Center : `kubectl delete -f astra_control_center_operator_deploy.yaml`
 
+.Étapes
 Pour installer le centre de contrôle Astra, procédez comme suit :
 
-*  the Astra Control Center bundle
-*  the bundle and change directory
-*  the images to your local registry
-*  up namespace and secret for registries with auth requirements
-*  the Astra Control Center operator
-*  Astra Control Center
-*  Astra Control Center and operator installation
-*  system status
-*  in to the Astra Control Center UI
+* <<Téléchargez le pack Astra Control Center>>
+* <<Déballez le bundle et modifiez le répertoire>>
+* <<Ajoutez les images à votre registre local>>
+* <<Configurez l'espace de noms et le secret pour les registres avec les exigences d'authentification>>
+* <<Poser le conducteur du centre de commande Astra>>
+* <<Configurer le centre de contrôle Astra>>
+* <<Installation complète du centre de contrôle Astra et du conducteur>>
+* <<Vérifiez l'état du système>>
+* <<Connectez-vous à l'interface utilisateur du centre de contrôle Astra>>
 
 
 Terminez le déploiement en effectuant le processus link:setup_overview.html["tâches de configuration"].
@@ -250,8 +252,8 @@ vim astra_control_center_operator_deploy.yaml
 imagePullSecrets:
 - name: <name_of_secret_with_creds_to_local_registry>
 ----
-.. Changer `[your_registry_path]` pour le `kube-rbac-proxy` image dans le chemin du registre où vous avez poussé les images dans un ,étape précédente.
-.. Changer `[your_registry_path]` pour le `acc-operator-controller-manager` image dans le chemin du registre où vous avez poussé les images dans un ,étape précédente.
+.. Changer `[your_registry_path]` pour le `kube-rbac-proxy` image dans le chemin du registre où vous avez poussé les images dans un <<substep_image_local_registry_push,étape précédente>>.
+.. Changer `[your_registry_path]` pour le `acc-operator-controller-manager` image dans le chemin du registre où vous avez poussé les images dans un <<substep_image_local_registry_push,étape précédente>>.
 .. (Pour les installations utilisant l'aperçu d'Astra Data Store) Découvrez ce problème connu concernant link:../release-notes/known-issues-ads.html#astra-data-store-cannot-be-used-as-a-storage-class-for-astra-control-center-due-to-mongodb-pod-liveness-probe-failure["Les spécialistes en provisionnement de classe de stockage et les changements supplémentaires que vous devrez apporter au YAML"].
 +
 [listing, subs="+quotes"]
@@ -351,8 +353,8 @@ IMPORTANT: Si vous utilisez un registre qui ne requiert pas d'autorisation, vous
 +
 .. Changer `[your_registry_path]` vers le chemin du registre où vous avez poussé les images à l'étape précédente.
 .. Modifiez le `accountName` chaîne du nom que vous souhaitez associer au compte.
-.. Modifiez le `astraAddress` Chaîne du FQDN que vous souhaitez utiliser dans votre navigateur pour accéder à Astra. Ne pas utiliser `http://` ou `https://` dans l'adresse. Copier ce FQDN pour l'utiliser dans un  in to the Astra Control Center UI,plus tard.
-.. Modifiez le `email` chaîne à l'adresse d'administrateur initiale par défaut. Copiez cette adresse e-mail pour l'utiliser dans un  in to the Astra Control Center UI,plus tard.
+.. Modifiez le `astraAddress` Chaîne du FQDN que vous souhaitez utiliser dans votre navigateur pour accéder à Astra. Ne pas utiliser `http://` ou `https://` dans l'adresse. Copier ce FQDN pour l'utiliser dans un <<Connectez-vous à l'interface utilisateur du centre de contrôle Astra,plus tard>>.
+.. Modifiez le `email` chaîne à l'adresse d'administrateur initiale par défaut. Copiez cette adresse e-mail pour l'utiliser dans un <<Connectez-vous à l'interface utilisateur du centre de contrôle Astra,plus tard>>.
 .. Changer `enrolled` Pour AutoSupport à `false` pour les sites sans connexion internet ou sans conservation `true` pour les sites connectés.
 .. (Facultatif) Ajouter un prénom `firstName` et nom `lastName` de l'utilisateur associé au compte. Vous pouvez effectuer cette étape maintenant ou plus tard dans l'interface utilisateur.
 .. (Facultatif) modifiez le `storageClass` Avantages pour une autre ressource de stockage Astra Trident, si nécessaire à votre installation.
@@ -758,13 +760,13 @@ metadata:
 Après avoir installé Astra Control Center, vous modifierez le mot de passe de l'administrateur par défaut et vous connecterez au tableau de bord de l'interface utilisateur de Astra Control Center.
 
 .Étapes
-. Dans un navigateur, entrez le FQDN que vous avez utilisé dans le `astraAddress` dans le  `astra_control_center_min.yaml` CR quand  Astra Control Center,Vous avez installé Astra Control Center.
+. Dans un navigateur, entrez le FQDN que vous avez utilisé dans le `astraAddress` dans le  `astra_control_center_min.yaml` CR quand <<Poser le centre de contrôle Astra,Vous avez installé Astra Control Center>>.
 . Acceptez les certificats auto-signés lorsque vous y êtes invité.
 +
 
 NOTE: Vous pouvez créer un certificat personnalisé après la connexion.
 
-. Dans la page de connexion à Astra Control Center, entrez la valeur que vous avez utilisée `email` dans `astra_control_center_min.yaml` CR quand  Astra Control Center,Vous avez installé Astra Control Center, suivi du mot de passe à usage unique (`ACC-[UUID]`).
+. Dans la page de connexion à Astra Control Center, entrez la valeur que vous avez utilisée `email` dans `astra_control_center_min.yaml` CR quand <<Poser le centre de contrôle Astra,Vous avez installé Astra Control Center>>, suivi du mot de passe à usage unique (`ACC-[UUID]`).
 +
 
 NOTE: Si vous saisissez trois fois un mot de passe incorrect, le compte admin est verrouillé pendant 15 minutes.

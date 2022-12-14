@@ -13,7 +13,7 @@ summary: Pour mettre à niveau Astra Control Center, téléchargez le pack et me
 
 Pour mettre à niveau Astra Control Center, téléchargez le pack d'installation depuis le site de support NetApp et suivez ces instructions pour mettre à niveau les composants d'Astra Control Center dans votre environnement. Vous pouvez utiliser cette procédure pour mettre à niveau Astra Control Center dans des environnements connectés à Internet ou à air comprimé.
 
-.Ce dont vous avez besoin, 8217;ll
+.Ce dont vous avez besoin
 * link:../get-started/requirements.html["Avant de commencer la mise à niveau, assurez-vous que votre environnement satisfait aux exigences minimales relatives au déploiement d'Astra Control Center"].
 * S'assurer que tous les opérateurs du groupe d'instruments sont en état de fonctionnement et disponibles.
 +
@@ -36,15 +36,16 @@ oc get apiservices
 * Déconnectez-vous de votre centre de contrôle Astra.
 
 
+.Description de la tâche
 Le processus de mise à niveau d'Astra Control Center vous guide à travers les étapes de haut niveau suivantes :
 
-*  the Astra Control Center bundle
-*  the bundle and change directory
-*  the images to your local registry
-*  the updated Astra Control Center operator
-*  Astra Control Center
-*  third-party services
-*  system status
+* <<Téléchargez le pack Astra Control Center>>
+* <<Déballez le bundle et modifiez le répertoire>>
+* <<Ajoutez les images à votre registre local>>
+* <<Poser le conducteur du centre de commande Astra mis à jour>>
+* <<Mettez à niveau Astra Control Center>>
+* <<Mettre à niveau des services tiers>>
+* <<Vérifiez l'état du système>>
 
 
 
@@ -142,8 +143,8 @@ vim astra_control_center_operator_deploy.yaml
 imagePullSecrets:
 - name: <name_of_secret_with_creds_to_local_registry>
 ----
-.. Changer `[your_registry_path]` pour le `kube-rbac-proxy` image dans le chemin du registre où vous avez poussé les images dans un ,étape précédente.
-.. Changer `[your_registry_path]` pour le `acc-operator-controller-manager` image dans le chemin du registre où vous avez poussé les images dans un ,étape précédente.
+.. Changer `[your_registry_path]` pour le `kube-rbac-proxy` image dans le chemin du registre où vous avez poussé les images dans un <<substep_image_local_registry_push,étape précédente>>.
+.. Changer `[your_registry_path]` pour le `acc-operator-controller-manager` image dans le chemin du registre où vous avez poussé les images dans un <<substep_image_local_registry_push,étape précédente>>.
 
 
 +
@@ -229,7 +230,7 @@ kubectl edit acc -n [netapp-acc or custom namespace]
 ----
 +
 
-NOTE: La modification de la version d'Astra est la seule exigence pour une mise à niveau du centre de contrôle Astra. Votre chemin de registre doit correspondre au chemin du registre où vous avez poussé les images dans un ,étape précédente.
+NOTE: La modification de la version d'Astra est la seule exigence pour une mise à niveau du centre de contrôle Astra. Votre chemin de registre doit correspondre au chemin du registre où vous avez poussé les images dans un <<substep_image_local_registry_push,étape précédente>>.
 
 . Vérifiez que les pods s'arrêtent et deviennent disponibles à nouveau :
 +
@@ -356,9 +357,9 @@ conditions:
 
 Les services tiers Traefik et Cert-Manager ne sont pas mis à niveau au cours des étapes de mise à niveau précédentes. Vous pouvez éventuellement les mettre à niveau à l'aide de la procédure décrite ici ou conserver les versions de service existantes si votre système l'exige. Voici la séquence de mise à niveau recommandée pour Trafik et Certs-Manager :
 
-.  up acc-helm-repo to upgrade Traefik and Cert-manager
-.  Traefik service using acc-helm-repo
-.  the Cert-manager service
+. <<Configurez ACC-Helm-repo pour mettre à niveau Trafik et Cert-Manager>>
+. <<Mettre à jour le service Traefik à l'aide de acc-Helm-repo>>
+. <<Mettez à jour le service Cert-Manager>>
 
 
 
@@ -459,7 +460,7 @@ python3.7 ./set_previous_values.py
 == Mettre à jour le service Traefik à l'aide de acc-Helm-repo
 
 
-NOTE: Vous devez déjà avoir  up acc-helm-repo to upgrade Traefik and Cert-manager,configurer acc-helm-repo avant de terminer la procédure suivante.
+NOTE: Vous devez déjà avoir <<Configurez ACC-Helm-repo pour mettre à niveau Trafik et Cert-Manager,configurer acc-helm-repo>> avant de terminer la procédure suivante.
 
 . Téléchargez le pack Traefik à l'aide d'un outil sécurisé de transfert de fichiers, tel que GNU wget :
 +
@@ -539,7 +540,7 @@ TEST SUITE: None
 == Mettez à jour le service Cert-Manager
 
 
-NOTE: Vous devez déjà avoir terminé le  Traefik service using acc-helm-repo,Mise à jour de Trafik et  up acc-helm-repo to upgrade Traefik and Cert-manager,Ajout de acc-Helm-Repo dans Helm avant de terminer la procédure suivante.
+NOTE: Vous devez déjà avoir terminé le <<Mettre à jour le service Traefik à l'aide de acc-Helm-repo,Mise à jour de Trafik>> et <<Configurez ACC-Helm-repo pour mettre à niveau Trafik et Cert-Manager,Ajout de acc-Helm-Repo dans Helm>> avant de terminer la procédure suivante.
 
 . Recherchez la version du graphique Helm à utiliser avec votre cert-Manager mis à niveau :
 +

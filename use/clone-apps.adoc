@@ -37,6 +37,7 @@ Lorsque vous créez un projet d'hébergement d'une application sur un cluster Op
 `oc adm policy add-scc-to-user privileged -z default -n wordpress`
 
 ====
+.Ce dont vous avez besoin
 Pour cloner les applications vers un autre cluster, il vous faut un compartiment par défaut. Lorsque vous ajoutez votre premier compartiment, il devient le compartiment par défaut.
 
 .Étapes
@@ -61,6 +62,7 @@ Pour cloner les applications vers un autre cluster, il vous faut un compartiment
 . *Résumé du clone* : consultez les détails sur le clone et sélectionnez *Clone*.
 
 
+.Résultat
 Astra Control Center clone cette application en fonction des informations que vous avez fournies. L'opération de clonage est réussie lorsque le nouveau clone d'application est dans `Available` Indiquez la page *applications*.
 
 

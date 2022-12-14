@@ -93,6 +93,7 @@ Les utilisateurs ayant le rôle propriétaire peuvent modifier le rôle de tous 
 . Sélectionnez un nouveau rôle, puis sélectionnez *changer le rôle* lorsque vous y êtes invité.
 
 
+.Résultat
 Astra Control Center met à jour les autorisations de l'utilisateur en fonction du nouveau rôle que vous avez sélectionné.
 
 
@@ -108,4 +109,5 @@ Les utilisateurs disposant du rôle propriétaire ou administrateur peuvent à t
 . Lorsque vous y êtes invité, confirmez la suppression en saisissant le mot "supprimer", puis sélectionnez *Oui, Supprimer l'utilisateur*.
 
 
+.Résultat
 Astra Control Center supprime l'utilisateur du compte.

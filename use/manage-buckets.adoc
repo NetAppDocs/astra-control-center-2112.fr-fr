@@ -39,7 +39,7 @@ Pour plus d'informations sur la gestion des compartiments à l'aide de l'API de 
 Vous pouvez effectuer les tâches suivantes liées à la gestion des compartiments :
 
 * link:../get-started/setup_overview.html#add-a-bucket["Ajouter un godet"]
-*  a bucket
+* <<Modifier un godet>>
 
 
 

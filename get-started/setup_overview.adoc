@@ -14,10 +14,10 @@ summary: 'Après avoir installé Astra Control Center, connectez-vous à l"inter
 Astra Control Center prend en charge et surveille ONTAP et Astra Data Store en tant que système back-end de stockage. Après avoir installé Astra Control Center, connectez-vous à l'interface utilisateur et modifiez votre mot de passe, vous devez configurer une licence, ajouter des clusters, gérer le stockage et ajouter des compartiments.
 
 .Tâches
-*  a license for Astra Control Center
-*  cluster
-*  a storage backend
-*  a bucket
+* <<Ajoutez une licence pour Astra Control Center>>
+* <<Ajouter un cluster>>
+* <<Ajout d'un système back-end>>
+* <<Ajouter un godet>>
 
 
 
@@ -26,6 +26,7 @@ Astra Control Center prend en charge et surveille ONTAP et Astra Data Store en t
 
 Vous pouvez ajouter une nouvelle licence à l'aide de l'interface utilisateur ou de https://docs.netapp.com/us-en/astra-automation/index.html["API"^] Pour bénéficier de toutes les fonctionnalités de l'Astra Control Center. Sans licence, votre utilisation d'Astra Control Center se limite à la gestion des utilisateurs et à l'ajout de nouveaux clusters.
 
+.Ce dont vous avez besoin
 Lorsque vous avez téléchargé Astra Control Center à partir du https://mysupport.netapp.com/site/products/all/details/astra-control-center/downloads-tab["Site de support NetApp"^], Vous avez également téléchargé le fichier de licence NetApp (NLF). Assurez-vous d'avoir accès à ce fichier de licence.
 
 
@@ -104,6 +105,7 @@ image:cluster-storage.png["Indique la classe de stockage à utiliser pour le clu
 . Vérifiez les informations, et si tout semble bien, sélectionnez *Ajouter cluster*.
 
 
+.Résultat
 Le cluster passe à l'état *découverte*, puis à *en cours d'exécution*. Vous avez ajouté un cluster Kubernetes et gérez-le dans Astra Control Center.
 
 
@@ -117,7 +119,7 @@ Vous pouvez ajouter un système de stockage back-end pour qu'Astra Control puiss
 
 Vous pouvez ajouter un stockage back-end découvert en parcourant les invites du tableau de bord ou du menu Backends.
 
-.Ce dont vous avez besoin, 8217;ll
+.Ce dont vous avez besoin
 * Vous avez link:../get-started/setup_overview.html#add-cluster["ajout d'un cluster"] Il est géré par Astra Control.
 +
 
@@ -214,7 +216,7 @@ TIP: Le nom et la description du compartiment apparaissent comme un emplacement 
 
 NOTE: Cette option n'apparaît pas pour le premier compartiment que vous créez.
 
-.. Continuez en ajoutant  S3 access credentials,informations d'identification.
+.. Continuez en ajoutant <<Ajoutez des identifiants d'accès S3,informations d'identification>>.
 
 
 
