@@ -1384,7 +1384,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-22 23:43:50 +0000">11/22/2022</time>
+    <time datetime="2022-12-14 18:26:40 +0000">12/14/2022</time>
     
   
 
@@ -1400,7 +1400,7 @@
 <p>Pour mettre à niveau Astra Control Center, téléchargez le pack d&#8217;installation depuis le site de support NetApp et suivez ces instructions pour mettre à niveau les composants d&#8217;Astra Control Center dans votre environnement. Vous pouvez utiliser cette procédure pour mettre à niveau Astra Control Center dans des environnements connectés à Internet ou à air comprimé.</p>
 </div>
 <div class="ulist">
-<div class="title">Ce dont vous avez besoin, 8217;ll</div>
+<div class="title">Ce dont vous avez besoin</div>
 <ul>
 <li>
 <p><a href="../get-started/requirements.html">"Avant de commencer la mise à niveau, assurez-vous que votre environnement satisfait aux exigences minimales relatives au déploiement d&#8217;Astra Control Center"</a>.</p>
@@ -1433,30 +1433,31 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Le processus de mise à niveau d&#8217;Astra Control Center vous guide à travers les étapes de haut niveau suivantes :</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>the Astra Control Center bundle</p>
+<p><a href="#téléchargez-le-pack-astra-control-center">Téléchargez le pack Astra Control Center</a></p>
 </li>
 <li>
-<p>the bundle and change directory</p>
+<p><a href="#déballez-le-bundle-et-modifiez-le-répertoire">Déballez le bundle et modifiez le répertoire</a></p>
 </li>
 <li>
-<p>the images to your local registry</p>
+<p><a href="#ajoutez-les-images-à-votre-registre-local">Ajoutez les images à votre registre local</a></p>
 </li>
 <li>
-<p>the updated Astra Control Center operator</p>
+<p><a href="#poser-le-conducteur-du-centre-de-commande-astra-mis-à-jour">Poser le conducteur du centre de commande Astra mis à jour</a></p>
 </li>
 <li>
-<p>Astra Control Center</p>
+<p><a href="#mettez-à-niveau-astra-control-center">Mettez à niveau Astra Control Center</a></p>
 </li>
 <li>
-<p>third-party services</p>
+<p><a href="#mettre-à-niveau-des-services-tiers">Mettre à niveau des services tiers</a></p>
 </li>
 <li>
-<p>system status</p>
+<p><a href="Vérifiez l&.html#8217;état du système">Vérifiez l&.html</a></p>
 </li>
 </ul>
 </div>
@@ -1626,10 +1627,10 @@ done</pre>
 </div>
 </li>
 <li>
-<p>Changer <code>[your_registry_path]</code> pour le <code>kube-rbac-proxy</code> image dans le chemin du registre où vous avez poussé les images dans un ,étape précédente.</p>
+<p>Changer <code>[your_registry_path]</code> pour le <code>kube-rbac-proxy</code> image dans le chemin du registre où vous avez poussé les images dans un <a href="#substep_image_local_registry_push">étape précédente</a>.</p>
 </li>
 <li>
-<p>Changer <code>[your_registry_path]</code> pour le <code>acc-operator-controller-manager</code> image dans le chemin du registre où vous avez poussé les images dans un ,étape précédente.</p>
+<p>Changer <code>[your_registry_path]</code> pour le <code>acc-operator-controller-manager</code> image dans le chemin du registre où vous avez poussé les images dans un <a href="#substep_image_local_registry_push">étape précédente</a>.</p>
 </li>
 </ol>
 </div>
@@ -1728,7 +1729,7 @@ deployment.apps/acc-operator-controller-manager configured</pre>
 <img src="/us-en/astra-control-center-2112/images/note.svg" alt="Note">
 </td>
 <td class="content">
-La modification de la version d&#8217;Astra est la seule exigence pour une mise à niveau du centre de contrôle Astra. Votre chemin de registre doit correspondre au chemin du registre où vous avez poussé les images dans un ,étape précédente.
+La modification de la version d&#8217;Astra est la seule exigence pour une mise à niveau du centre de contrôle Astra. Votre chemin de registre doit correspondre au chemin du registre où vous avez poussé les images dans un <a href="#substep_image_local_registry_push">étape précédente</a>.
 </td>
 </tr>
 </table>
@@ -1870,13 +1871,13 @@ vault-controller-86c94fbf4f-krttq          1/1     Running   0          9m24s</p
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>up acc-helm-repo to upgrade Traefik and Cert-manager</p>
+<p><a href="#configurez-acc-helm-repo-pour-mettre-à-niveau-trafik-et-cert-manager">Configurez ACC-Helm-repo pour mettre à niveau Trafik et Cert-Manager</a></p>
 </li>
 <li>
-<p>Traefik service using acc-helm-repo</p>
+<p><a href="Mettre à jour le service Traefik à l&.html#8217;aide de acc-Helm-repo">Mettre à jour le service Traefik à l&.html</a></p>
 </li>
 <li>
-<p>the Cert-manager service</p>
+<p><a href="#mettez-à-jour-le-service-cert-manager">Mettez à jour le service Cert-Manager</a></p>
 </li>
 </ol>
 </div>
@@ -2006,7 +2007,7 @@ print('Done')</pre>
 <img src="/us-en/astra-control-center-2112/images/note.svg" alt="Note">
 </td>
 <td class="content">
-Vous devez déjà avoir  up acc-helm-repo to upgrade Traefik and Cert-manager,configurer acc-helm-repo avant de terminer la procédure suivante.
+Vous devez déjà avoir <a href="#configurez-acc-helm-repo-pour-mettre-à-niveau-trafik-et-cert-manager">configurer acc-helm-repo</a> avant de terminer la procédure suivante.
 </td>
 </tr>
 </table>
@@ -2117,7 +2118,7 @@ TEST SUITE: None</pre>
 <img src="/us-en/astra-control-center-2112/images/note.svg" alt="Note">
 </td>
 <td class="content">
-Vous devez déjà avoir terminé le  Traefik service using acc-helm-repo,Mise à jour de Trafik et  up acc-helm-repo to upgrade Traefik and Cert-manager,Ajout de acc-Helm-Repo dans Helm avant de terminer la procédure suivante.
+Vous devez déjà avoir terminé le <a href="Mettre à jour le service Traefik à l&.html#8217;aide de acc-Helm-repo">Mise à jour de Trafik</a> et <a href="#configurez-acc-helm-repo-pour-mettre-à-niveau-trafik-et-cert-manager">Ajout de acc-Helm-Repo dans Helm</a> avant de terminer la procédure suivante.
 </td>
 </tr>
 </table>

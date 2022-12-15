@@ -1384,7 +1384,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-22 23:43:50 +0000">11/22/2022</time>
+    <time datetime="2022-12-14 18:26:40 +0000">12/14/2022</time>
     
   
 
@@ -1491,7 +1491,7 @@ current-context: kubernetes-admin@kubernetes</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="létat-du-cluster-est-supprimé-bien-que-le-cluster-et-le-réseau-fonctionnent-sinon-comme-prévu">L&#8217;état du cluster est supprimé bien que le cluster et le réseau fonctionnent sinon comme prévu</h2>
+<h2 id="le-cluster-est-dans-le-removed-état-bien-que-le-cluster-et-le-réseau-fonctionnent-autrement-comme-prévu">Le cluster est dans le <code>removed</code> état bien que le cluster et le réseau fonctionnent autrement comme prévu</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Si un cluster se trouve dans le <code>removed</code> État et pourtant, la connectivité cluster et réseau semble saine (les tentatives externes d&#8217;accès au cluster via les API Kubernetes sont réussies). Le kubeconfig que vous avez fourni au contrôle Astra pourrait ne plus être valide. Cela peut être dû à une rotation ou à une expiration du certificat sur le cluster. Pour corriger ce problème, mettez à jour les informations d&#8217;identification associées au cluster dans Astra Control à l&#8217;aide du <a href="https://docs.netapp.com/us-en/astra-automation/index.html">"API de contrôle Astra"</a>:</p>
