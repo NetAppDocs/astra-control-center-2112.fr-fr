@@ -193,13 +193,13 @@ L'environnement opérationnel qui héberge le centre de contrôle Astra communiq
 | Consommateurs de metrics | Nœud de travail Astra Control Center | 9090 | HTTPS | Communication de données de metrics : assurez-vous que chaque cluster géré peut accéder à ce port sur le cluster hébergeant Astra Control Center (communication bidirectionnelle requise). 
 
 
-| Centre de contrôle Astra | Service Cloud Insights hébergé (https://cloudinsights.netapp.com)[] | 443 | HTTPS | Communication avec Cloud Insights 
+| Centre de contrôle Astra | Service Cloud Insights hébergé  | 443 | HTTPS | Communication avec Cloud Insights 
 
 
-| Centre de contrôle Astra | Fournisseur de compartiments de stockage Amazon S3 (https://my-bucket.s3.us-west-2.amazonaws.com/)[] | 443 | HTTPS | Communications de stockage Amazon S3 
+| Centre de contrôle Astra | Fournisseur de compartiments de stockage Amazon S3  | 443 | HTTPS | Communications de stockage Amazon S3 
 
 
-| Centre de contrôle Astra | Active IQ de NetApp (https://activeiq.solidfire.com)[] | 443 | HTTPS | Communication avec NetApp ActiveIQ 
+| Centre de contrôle Astra | Active IQ de NetApp  | 443 | HTTPS | Communication avec NetApp ActiveIQ 
 |===
 
 
