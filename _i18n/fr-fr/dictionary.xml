@@ -126,7 +126,6 @@
   <block id="c3314925ef2c97256c3237a450d6f4f5" category="list-text">Système back-end de stockage Trident avec ONTAP 9.5 et versions ultérieures</block>
   <block id="5b4b1a973a4751fbfc2fda3bd9bac412" category="list-text">Systèmes back-end de stockage de magasin de données Astra</block>
   <block id="51269e2584d26b04961877ec77db6da7" category="paragraph">Dans un environnement connecté au cloud, Astra Control Center utilise Cloud Insights pour fournir des fonctionnalités avancées de surveillance et de télémétrie. En l'absence de connexion Cloud Insights, un monitoring et une télémétrie limités (7 jours de metrics) sont disponibles dans Astra Control Center, mais aussi exportés vers les outils de surveillance natifs de Kubernetes (comme Prometheus et Grafana) via des points de terminaison ouverts.</block>
-  <block id="1bc8163319d46bff9915aa0226885a42" category="paragraph">Avec Astra Control Center et l'écosystème AutoSupport et Active IQ, il est entièrement intégré. Il fournit aux utilisateurs et au support NetApp des informations relatives à la résolution de problèmes et à l'utilisation.</block>
   <block id="26849905a5aa23f71bc18ee28e352604" category="paragraph">Vous pouvez essayer Astra Control Center avec une licence d'évaluation de 90 jours. La version d'évaluation est prise en charge par e-mail et par la communauté (Channel Slack). Vous avez également accès aux articles et à la documentation de la base de connaissances à partir du tableau de bord de support des produits.</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link">de formation</block>
   <block id="e63cc3795b9216d59b085bd3111a248d" category="paragraph">Pour installer et utiliser Astra Control Center, vous devez vous en assurer<block ref="bdde32b2c988689d803729c06660acb4" category="inline-link-rx"></block>.</block>
@@ -323,8 +322,6 @@
   <block id="641aa484b65c0e7fde013bc2c73c8773" category="cell">Communication avec Cloud Insights</block>
   <block id="dca17a8eb713c4979ff90034336d90db" category="cell">Fournisseur de compartiments de stockage Amazon S3 <block ref="4e90f284db65fc9cd863090aa8767e3c" category="inline-link-rx"></block></block>
   <block id="30e3526a27f1ee2a9a8203d224600891" category="cell">Communications de stockage Amazon S3</block>
-  <block id="814db317c49c42a57e9b5fe4d5943fa8" category="cell">Active IQ de NetApp <block ref="9e45a0209dd868ae736875db61b96d9d" category="inline-link-rx"></block></block>
-  <block id="5dbf9f76b95952a36b5c81bedd95e1c8" category="cell">Communication avec NetApp ActiveIQ</block>
   <block id="f370975993dbb1e7c1e24af01ed7986c" category="section-title">Navigateurs Web pris en charge</block>
   <block id="5ee52824555f7e54b800612663b9f098" category="paragraph">Astra Control Center prend en charge les versions récentes de Firefox, Safari et Chrome avec une résolution minimale de 1280 x 720.</block>
   <block id="159b2efa467f3d1f53e7c16668353bf5" category="inline-link-macro">démarrage rapide</block>
@@ -1828,4 +1825,7 @@
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="931607e4df934f12f0a0d0323f739e8c" category="list-text"><block ref="46bdba95fad7359beee853f2ee144260" category="inline-link-macro-rx"></block>.</block>
+  <block id="4ffa5f8c75a25d5db0add99affd09af7" category="paragraph">ASTRA Control Center est entièrement intégré à l'écosystème AutoSupport et Active IQ Digital Advisor (également connu sous le nom de conseiller digital) pour fournir aux utilisateurs et au support NetApp des informations sur le dépannage et l'utilisation.</block>
+  <block id="b01720cac678655d10d01884b38e0df9" category="cell">Conseiller digital <block ref="33723d61009b6ad6e20c37f5f073dad1" category="inline-link-rx"></block>)</block>
+  <block id="fffb137d34ba73dd7286c16dae165a77" category="cell">Communication Digital Advisor</block>
 </blocks>

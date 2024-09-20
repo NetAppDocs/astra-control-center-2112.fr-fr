@@ -199,7 +199,7 @@ L'environnement opérationnel qui héberge le centre de contrôle Astra communiq
 | Centre de contrôle Astra | Fournisseur de compartiments de stockage Amazon S3  | 443 | HTTPS | Communications de stockage Amazon S3 
 
 
-| Centre de contrôle Astra | Active IQ de NetApp  | 443 | HTTPS | Communication avec NetApp ActiveIQ 
+| Centre de contrôle Astra | Conseiller digital (https://activeiq.solidfire.com[]) | 443 | HTTPS | Communication Digital Advisor 
 |===
 
 
